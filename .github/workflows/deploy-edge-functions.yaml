@@ -16,6 +16,8 @@ jobs:
 
     steps:
       - name: Deploy Curator Function
+        run: echo "Starting deployment of curator functions"
+
       - uses: actions/checkout@v3
 
       - uses: supabase/setup-cli@v1
