@@ -46,7 +46,7 @@ serve(async (req) => {
     
     // Insert videos into database
     const { data, error } = await supabase
-      .from('math_videos')
+      .from('curated_videos')
       .upsert(videos.map(video => ({
         video_id: video.videoId,
         channel_name: video.channelName,
